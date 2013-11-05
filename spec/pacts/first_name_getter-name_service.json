@@ -1,0 +1,28 @@
+{
+  "provider": {
+    "name": "Name service"
+  },
+  "consumer": {
+    "name": "First Name Getter"
+  },
+  "interactions": [
+    {
+      "description": "a request for a user",
+      "provider_state": "Normal operation",
+      "request": {
+        "method": "get",
+        "path": ""
+      },
+      "response": {
+        "status": 200,
+        "content_type": "application/xml",
+        "body": "<user><first_name>James</first_name><last_name>Gregory</last_name></user>"
+      }
+    }
+  ],
+  "metadata": {
+    "pact_gem": {
+      "version": "1.0.20"
+    }
+  }
+}
